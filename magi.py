@@ -39,3 +39,8 @@ class Magus:
             'Artes Liberales': 0,
             'Philosophiae': 0,
         }
+
+# TODO Create string output for display
+    def __str__(self):
+        return  "%s, of House %s" % (self.name, self.house)
+        
