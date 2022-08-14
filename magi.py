@@ -1,3 +1,4 @@
+
 # magi.py - this is a class designed to carry the important information about
 # a magus for calculating their magical works
 
@@ -11,7 +12,7 @@
 
 class Magus:
     """The numbers and mechanics of a Magus"""
-    __init__(self):
+    def __init__(self):
 
         # The magus name and House tradition
         self.name = "Generic Magus"
@@ -25,7 +26,7 @@ class Magus:
         self.tech = {'Cr':0, 'In':0, 'Mu':0, 'Pe':0, 'Re':0}
         self.form = {'An':0, 'Aq':0, 'Au':0, 'Co':0, 'He':0,
                      'Ig':0, 'Im':0, 'Me':0, 'Te':0, 'Vi':0}
-        self.arts = self.tech + self.form
+        self.arts ={ **self.tech, **self.form}
         
         # The Characteristics of the Magus
         # Only Stamina and Intelligence matter for spellcasting or design
