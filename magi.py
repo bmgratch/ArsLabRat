@@ -40,7 +40,12 @@ class Magus:
             'Philosophiae': 0,
         }
 
-# TODO Create string output for display
+    # String output for display
     def __str__(self):
         return  "%s, of House %s" % (self.name, self.house)
-        
+
+    #TODO Create character sheet output method
+    def sheet(self):
+        pass
+
+    #TODO Create import and export functions to save magi for reuse
