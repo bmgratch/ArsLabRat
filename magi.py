@@ -47,6 +47,10 @@ class Magus:
     #TODO Create character sheet output method
     def sheet(self):
         print("%s, of House %s" % (self.name, self.house))
-        pass
+        print(self.char)
+        print(self.abilities)
+        print(self.tech)
+        print(self.form)
+        return
 
     #TODO Create import and export functions to save magi for reuse
