@@ -14,4 +14,5 @@ testMagus = magi.Magus()
 #print (testMagus.abilities)
 
 print (testMagus)
+testMagus.sheet()
 print()
